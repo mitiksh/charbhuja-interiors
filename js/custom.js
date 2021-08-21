@@ -73,7 +73,7 @@
 
 
   //parallax
-  if ($('#parallax1').length || $('#parallax2').length) {
+  if ($('#parallax1').length  {
 
     $(window).stellar({
       responsive: true,
@@ -81,7 +81,7 @@
       parallaxElements: false,
       horizontalScrolling: false,
       horizontalOffset: 0,
-      verticalOffset: 0
+      verticalOffset: 0.5
     });
 
   }
