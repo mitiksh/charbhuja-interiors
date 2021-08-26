@@ -547,12 +547,25 @@ Works
 	height: 250px;
 }
 
-.og-grid li > a,
-.og-grid li > a img {
-	border: none;
-	outline: none;
-	display: block;
-	position: relative;
+figure {
+	width: 100% ;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0px 0;
+	text-align: center;
+	overflow:hidden;
+}
+
+.og-grid li figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.og-grid li figure:hover img  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 .og-grid li.og-expanded > a::after {
@@ -791,7 +804,7 @@ ul.social-network li a i{
 Footer
 ================================= */
 footer {
-	background: #00c1c1;
+	background: #3a3a3a;
 	color: #fff;
 	padding: 50px 0 30px;
 }
